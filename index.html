@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+  <div class="card m-4">
+    <div class="card-header">
+      <h3>Payment form example</h3>
+    </div>
+    <div class="card-body ">
+      <div class="alert alert-danger" role="alert">
+        Some filds are missing
+      </div>
+  <form class="row g-3 needs-validation " novalidate>
+    <div class="col-md-5 position-relative">
+      <label for="Card" class="form-label">Card #</label>
+      <input type="number" class="form-control" id="validationTooltip01" min="0000000000000000" max="9999999999999999" required placeholder="XXXXXXXX">
+      <div class="valid-tooltip">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-3 position-relative">
+      <label for="Card" class="form-label">CVC #</label>
+      <input type="number" class="form-control" id="validationTooltip01" min="3" max="3" required placeholder="xxx">
+      <div class="valid-tooltip">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4 position-relative">
+      <label for="Card" class="form-label">Amount</label>
+      <div class="input-group">
+        <div class="input-group-text">$</div>
+        <input type="number" class="form-control" id="validationTooltip01" min="16" max="16" required>
+      </div>
+      <div class="valid-tooltip">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-6 position-relative">
+      <label for="validationTooltip01" class="form-label">Nombre</label>
+      <input type="" class="form-control" id="validationTooltip01" required>
+      <div class="valid-tooltip">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-6 position-relative">
+      <label for="validationTooltip02" class="form-label">Apellido</label>
+      <input type="text" class="form-control" id="validationTooltip02" required>
+      <div class="valid-tooltip">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-6 position-relative">
+      <label for="validationTooltip03" class="form-label">Ciudad</label>
+      <input type="text" class="form-control" id="validationTooltip03" required>
+      <div class="invalid-tooltip">
+        Please provide a valid city.
+      </div>
+    </div>
+    <div class="col-md-3 position-relative">
+      <label for="validationTooltip04" class="form-label">Estado</label>
+      <select class="form-select" id="validationTooltip04" aria-placeholder="Pick A Estate" required>
+        <option selected disabled value="">Seleccione un Estado</option>
+        <option>Amazonas</option>
+        <option>Anzoategui</option>
+        <option>Apure</option>
+        <option>Aragua</option>
+        <option>Barinas</option>
+        <option>Bolivar</option>
+        <option>Carabobo</option>
+        <option>Cojedes</option>
+        <option>Delta AmacuroTrujillo, Vargas, Yaracuy y Zulia.</option>
+        <option>Dependencias Federales</option>
+        <option>Distrito Federal</option>
+        <option>Falcón</option>
+        <option>Guárico</option>
+        <option>Lara</option>
+        <option>Mérida</option>
+        <option>Miranda</option>
+        <option>Monagas</option>
+        <option>Nueva Esparta</option>
+        <option>Portuguesa</option>
+        <option>Sucre</option>
+        <option>Táchira</option>
+        <option>Trujillo</option>
+        <option>Vargas</option>
+        <option>Yaracuy</option>
+        <option>Zulia</option>
+      </select>
+      <div class="invalid-tooltip">
+        Por favor proporcione un Estado
+      </div>
+    </div>
+    <div class="col-md-3 position-relative">
+      <label for="validationTooltip05" class="form-label">Codigo postal</label>
+      <input type="text" class="form-control" id="validationTooltip05" required>
+      <div class="invalid-tooltip">
+        Por favor proporcione un codigo postal
+      </div>
+    </div>
+    <div class="d-flex justify-content-between">  
+    <div class="col-md-6">
+      <div class="label we accept">
+        <label for="form-check-inline">We accept:</label>
+      </div>
+      <div class="btn btn-secondary">
+    <div class="form-check-inline">
+
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+      <label class="form-check-label" for="inlineRadio1"><i class="fa-brands fa-cc-mastercard"></i></label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+      <label class="form-check-label" for="inlineRadio2"><i class="fa-brands fa-cc-visa"></i></label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+      <label class="form-check-label" for="inlineRadio2"><i class="fa-brands fa-cc-paypal"></i></label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+      <label class="form-check-label" for="inlineRadio2"><i class="fa-brands fa-cc-amex"></i></label>
+    </div>
+  </div>
+  </div>
+  <div class="mb-3 col-md-6">
+    <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    <p>Add any note here</p>
+  </div>
+</div>
+  </form>
+</div>
+<div class="card-footer d-flex justify-content-end">
+  <button class="btn btn-secondary" type="submit">Cancel</button>
+  <button class="btn btn-primary ms-2" type="submit">Send</button>
+</div>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
